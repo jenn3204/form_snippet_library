@@ -59,10 +59,9 @@
         <h2>Inputs</h2>
         <p>Inside a form we can create a bunch of inputs—the things people interact with and submit their information to.</p>
         <p><pre><code class="language-html">
-        <form action="" method="">
-            <label for="myInput">the label text</label>
-            <input id="myInput" type="">
-        </form>
+        <label for="myInput">the label text</label>
+        <input id="myInput" type="">
+       
     </code></pre></p>
     <p>The <code class="language-html">input</code> has to come with a <code class="language-html">label</code> tag.
 <br>The <code class="language-html">label</code> tag gives a name/title to the input</p>
@@ -94,10 +93,9 @@
 <h4>Example:</h4>
 <p>Allows a number between 0 and 10 with the increment of 1 (1, 2, 3 etc. not 1.4, 2.8 etc)</p>
 <p><pre><code class="language-html">
-    <form action="" method="post">
-        <label for="myInput">write a number between 0 and 10</label>
-        <input id="myInput" type="number" placeholder="http://example.com" min="0" max="10" step="1">
-    </form>
+    <label for="myInput">write a number between 0 and 10</label>
+    <input id="myInput" type="number" placeholder="http://example.com" min="0" max="10" step="1">
+
 </code></pre></p>
 
 
@@ -138,18 +136,16 @@
             <h2>Textareas</h2>
             <p>The textarea tag is an alternative to <pre><code class="language-html"><input type="text"></code></pre> that allows multiple lines and longer text.</p>
             <p><pre><code class="language-html">
-    <form action="" method="post">
         <label for="message">Message</label>
         <textarea id="message"></textarea>
-    </form>
+
             </code></pre></p>
         </div>
         <div class="ex">
             <h4>It looks like this (default, no styling):</h4>
-            <form action="" method="post">
-                <label for="message">Message</label>
-                <textarea id="message"></textarea>
-            </form>
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+
         </div>
     </div>
     <div class="container">
@@ -158,19 +154,18 @@
             <p>Select boxes, aka dropdown boxes, allow a user to pick one option of many.</p>
             <p>Consists of select elements and option elements</p>
             <p><pre><code class="language-html">
-    <form action="" method="post">
         <label for="province">Province</label>
         <select id="province">
             <option>Manitoba</option>
             <option>Ontario</option>
             <option>Quebec</option>
         </select>
-    </form>
+
                         </code></pre></p>
 
         <p>Options elements can be grouped together using the optgroup tag. The label="…" attribute is used to show a non-selectable heading for the group.</p>
         <p><pre><code class="language-html">
-        <form action="" method="post">
+   
             <label for="province">Province or State</label>
                 <select id="province">
                 <optgroup label="Canada">
@@ -182,21 +177,21 @@
                    <option>California</option>
                 </optgroup>
                 </select>
-        </form>
+
                                 </code></pre></p>
         </div>
         <div class="ex">
             <h4>It looks like this (default, no styling):</h4>
-            <form action="" method="post">
+        
                 <label for="province">Province</label>
                 <select id="province">
                     <option>Manitoba</option>
                     <option>Ontario</option>
                     <option>Quebec</option>
                 </select>
-            </form>
+
             <h4>And it looks like this with grouping:</h4>
-            <form action="" method="post">
+
                 <label for="province">Province or State</label>
 <select id="province">
   <optgroup label="Canada">
@@ -208,7 +203,7 @@
     <option>California</option>
   </optgroup>
 </select>
-            </form>
+
         </div>
     </div>
 
@@ -218,19 +213,19 @@
             <p>Checkboxes allow a selection of multiple items out of a few possiblities.</p>
 
             <p><pre><code class="language-html">
-    <form action="" method="post">
+
         <input type="checkbox" id="apato">
         <label for="apato">Apatosaurus</label>
-    </form>
+
         </code></pre></p>
         <p>In checkboxes (and radio buttons) it’s most common to have the label come after the input element.</p>
 
         <p>If you want the checkbox to be checked by default use the checked attribute. This applies to radio buttons too.</p>
         <p><pre><code class="language-html">
-        <form action="" method="post">
+
             <input type="checkbox" id="apato" checked>
             <label for="apato">Apatosaurus</label>
-        </form>
+
         </code></pre></p>
         </div>
         <div class="ex">
@@ -240,10 +235,10 @@
                 <label for="apato">Apatosaurus</label>
             </form>
             <h4>And it looks like this with checked attribute:</h4>
-            <form action="" method="post">
+
                 <input type="checkbox" id="apato" checked>
                 <label for="apato">Apatosaurus</label>
-            </form>
+
         </div>
     </div>
     <div class="container">
